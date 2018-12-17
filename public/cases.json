@@ -1,0 +1,110 @@
+[
+  {
+    "client_name": "bol.com",
+    "case_introduction": "A summer island in the Netherlands",
+    "url": "https://bol.com",
+    "image": "/images/bol.png"
+  },
+  {
+    "client_name": "kempen",
+    "case_introduction": "Not some average banking website",
+    "url": "https://www.deptagency.com",
+    "image": "/images/kempen.png"
+  },
+  {
+    "client_name": "philips",
+    "case_introduction": "Beautiful design meets innovative technology",
+    "url": "https://www.deptagency.com",
+    "image": "/images/philips.png"
+  },
+  {
+    "client_name": "gemeentemuseum",
+    "case_introduction": "A 100 years of Mondriaan & de Stijl",
+    "url": "https://www.deptagency.com",
+    "image": "/images/gemeentemuseum.png"
+  },
+  {
+    "client_name": "florensis",
+    "case_introduction": "Rethinking the entire online ecosystem",
+    "url": "https://www.deptagency.com",
+    "image": "/images/florensis.png"
+  },
+  {
+    "client_name": "microsoft",
+    "case_introduction": "Tapping into Ireland's unique gaming culture and bringing a fresh flavour to their Xbox socialmedia channels",
+    "url": "https://www.deptagency.com",
+    "image": "/images/microsoft.png"
+  },
+  {
+    "client_name": "o'neill",
+    "case_introduction": "Integrating existing content into O'Neill's new e-commerce platform",
+    "url": "https://www.deptagency.com",
+    "image": "/images/o'neill.png"
+  },
+  {
+    "client_name": "be lighting",
+    "case_introduction": "Delivering clarity on a global scale",
+    "url": "https://www.deptagency.com",
+    "image": "/images/belighting.png"
+  },
+  {
+    "client_name": "tui",
+    "case_introduction": "Swipe to find your next holiday destination",
+    "url": "https://www.deptagency.com",
+    "image": "/images/tui.png"
+  },
+  {
+    "client_name": "butlins",
+    "case_introduction": "Enhancing customer experience for personalised holiday planning using real time data",
+    "url": "https://www.deptagency.com",
+    "image": "/images/butlins.png"
+  },
+  {
+    "client_name": "vacanseselect",
+    "case_introduction": "Predicting booking behavior for holidays with smart data, voice search and machine learning",
+    "url": "https://www.deptagency.com",
+    "image": "/images/vacanseselect.png"
+  },
+  {
+    "client_name": "florensis",
+    "case_introduction": "Rethinking the entire online ecosystem",
+    "url": "https://www.deptagency.com",
+    "image": "/images/florensis.png"
+  },
+  {
+    "client_name": "chocomel",
+    "case_introduction": "A campaign for the limited edition letter packs",
+    "url": "https://www.deptagency.com",
+    "image": "/images/chocomel.png"
+  },
+  {
+    "client_name": "jbl",
+    "case_introduction": "Live like a champion with Jerome Boateng",
+    "url": "https://www.deptagency.com",
+    "image": "/images/jbl.png"
+  },
+  {
+    "client_name": "zalando",
+    "case_introduction": "Innovative SEO and content strategy for Zalando",
+    "url": "https://www.deptagency.com",
+    "image": "/images/zalando.png"
+  },
+  {
+    "client_name": "koninklijke bibliotheek",
+    "case_introduction": "The search for the most influential book ever",
+    "url": "https://www.deptagency.com",
+    "image": "/images/koninklijke_bibliotheek.png"
+  },
+  {
+    "client_name": "liberty global",
+    "case_introduction": "Delivering complex commerce solutions",
+    "url": "https://www.deptagency.com",
+    "image": "/images/liberty_global.png"
+  },
+  {
+    "client_name": "arla",
+    "case_introduction": "Swipe to find your next holiday destination",
+    "url": "https://www.deptagency.com",
+    "image": "/images/arla.png"
+  }
+]
