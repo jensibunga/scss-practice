@@ -3,6 +3,7 @@ import FourCasesTemplate from '../Templates/FourCasesTemplate';
 import ThreeCasesTemplate from '../Templates/ThreeCasesTemplate';
 import TwoCasesTemplate from '../Templates/TwoCasesTemplate';
 import HomepageBanner from '../HomepageBanner/index';
+import ViewCaseButton from '../ViewCaseButton/index';
 import FilterBar from '../FilterBar/index';
 import Clients from '../Clients/index';
 import Quote from '../Quote';
@@ -13,10 +14,12 @@ import axios from 'axios';
 import {
   Container,
   HomepageBannerWrapper,
+  ButtonWrapper,
   FilterBarWrapper,
   ProjectWrapper,
   ContactFormWrapper,
   ClientWrapper,
+  QuoteWrapper,
 } from './styles';
 
 class Home extends React.Component {
@@ -50,6 +53,9 @@ class Home extends React.Component {
         <HomepageBannerWrapper>
           <HomepageBanner />
         </HomepageBannerWrapper>
+        <ButtonWrapper>
+          <ViewCaseButton />
+        </ButtonWrapper>
         <FilterBarWrapper>
           <FilterBar />
         </FilterBarWrapper>
@@ -73,9 +79,9 @@ class Home extends React.Component {
             <FourCasesTemplate cases={this.state.cases.slice(12, 16)} />
           </ProjectWrapper>
         )}
-        <FilterBarWrapper>
+        <QuoteWrapper>
           <Quote />
-        </FilterBarWrapper>
+        </QuoteWrapper>
 
         {this.state.cases && (
           <ProjectWrapper>

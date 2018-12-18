@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../NavBar/index';
+import Button from '../ViewCaseButton/index';
 import {
   HomepageBannerImage,
   HomepageBannerContainer,
@@ -9,7 +10,7 @@ import {
   LogoNameWrapper,
   ImageLogoName,
   NavbarWrapper,
-  TopBarWrapper
+  TopBarWrapper,
 } from './styles';
 
 class HomepageBanner extends React.Component {
@@ -24,9 +25,9 @@ class HomepageBanner extends React.Component {
           <TitleText>WORK</TitleText>
         </TextWrapper>
         <ButtonWrapper>
-          {' '}
-          <button>View Case</button>
+          <Button />
         </ButtonWrapper>
+
         <HomepageBannerImage />
       </HomepageBannerContainer>
     );
