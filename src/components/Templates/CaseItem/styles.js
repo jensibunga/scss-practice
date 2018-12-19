@@ -1,10 +1,10 @@
 import styled from 'styled-components/macro';
 
-export const CaseWrapper = styled.div``;
+export const CaseWrapper = styled.div`
 
-export const ImageWrapper = styled.div`
-  background-color: yellow;
 `;
+
+
 
 export const CaseImage = styled.img`
   height: 500px;
@@ -43,5 +43,10 @@ export const UnstyledLink = styled.div`
     color: #1a18f7;
     size: 14px;
     font-family: Helvetica, Arial, sans-serif;
+  }
+  span {
+    @media (max-width: 540px) {
+      display: none;
+    }
   }
 `;

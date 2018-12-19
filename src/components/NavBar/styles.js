@@ -4,11 +4,11 @@ export const MenuBar = styled.div`
   line-height: 30px;
   height: 30px;
 
-  &:hover{
+  &:hover {
     color: white;
     cursor: pointer;
   }
- 
+
   @media only screen and (max-width: 540px) {
     line-height: 2.75;
     overflow: hidden;
@@ -22,7 +22,7 @@ export const MenuBar = styled.div`
     height: 32px; */
   }
 
-  a {
+  span {
     font-family: Teko;
     font-size: 18px;
     line-height: 1;

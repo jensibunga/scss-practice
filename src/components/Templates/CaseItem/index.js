@@ -1,10 +1,8 @@
 import React from 'react';
 import {
-  Wrapper,
   CaseWrapper,
   CaseImage,
   UnstyledLink,
-  ImageWrapper,
   StyledClientName,
   Title,
 } from './styles';
@@ -12,18 +10,15 @@ import {
 const Caseitem = props => {
   return (
     <CaseWrapper>
-      {props.image && (
-        <ImageWrapper>
-          <CaseImage src={props.image} />
-        </ImageWrapper>
-      )}
+      {props.image && <CaseImage src={props.image} />}
 
-      <StyledClientName>{props.client_name.toUpperCase()}</StyledClientName>
+      <StyledClientName>{props.client_name}</StyledClientName>
       <Title>{props.case_introduction}</Title>
 
       <UnstyledLink href={props.url}>
         <span tabIndex="0">
-          <i className="fa fa-caret-right" />View Source
+          <i className="fa fa-caret-right" />
+          View Source
         </span>
       </UnstyledLink>
     </CaseWrapper>

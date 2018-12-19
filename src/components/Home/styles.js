@@ -19,3 +19,7 @@ export const Column = styled.div`
   grid-column-start: ${props => props.start};
   grid-column-end: ${props => props.end};
 `;
+
+export const Space = styled.div`
+  margin: ${props => props.margin}px;
+`;

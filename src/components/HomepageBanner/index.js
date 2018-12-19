@@ -16,7 +16,7 @@ class HomepageBanner extends React.Component {
     return (
       <HomepageBannerContainer>
         <TopBarWrapper>
-          <ImageLogoName src="logos/deptLogo.png" alt="dept" />
+          <ImageLogoName src="images/logos/deptLogo.png" alt="dept" />
           <Navbar />
         </TopBarWrapper>
         <TextWrapper>

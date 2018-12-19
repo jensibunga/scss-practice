@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactModal from 'react-modal';
 
 import { MenuBar } from './styles';
 
@@ -22,7 +23,13 @@ class Navbar extends React.Component {
   render() {
     return (
       <MenuBar>
-        <a href="#">MENU</a>
+        <span onClick={this.handleOpenModal}>MENU</span>
+        <ReactModal
+          isOpen={this.state.showModal}
+          contentLabel="Minimal Modal Example"
+        >
+          <button onClick={this.handleCloseModal}>Close Modal</button>
+        </ReactModal>
       </MenuBar>
     );
   }
