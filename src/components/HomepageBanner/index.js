@@ -1,6 +1,7 @@
 import React from 'react';
+import DeptLogo from '../../Generic/logo/DeptLogo';
 import Navbar from '../NavBar/index';
-import Button from '../ViewCaseButton/index';
+
 import {
   HomepageBannerImage,
   HomepageBannerContainer,
@@ -9,6 +10,7 @@ import {
   ButtonWrapper,
   ImageLogoName,
   TopBarWrapper,
+  TopBarWrapperContent
 } from './styles';
 
 class HomepageBanner extends React.Component {
@@ -16,17 +18,23 @@ class HomepageBanner extends React.Component {
     return (
       <HomepageBannerContainer>
         <TopBarWrapper>
-          <ImageLogoName src="images/logos/deptLogo.png" alt="dept" />
+          <TopBarWrapperContent>
+          <DeptLogo />
           <Navbar />
+          </TopBarWrapperContent>
         </TopBarWrapper>
+
+        
         <TextWrapper>
           <TitleText>WORK</TitleText>
         </TextWrapper>
+
+
         <ButtonWrapper>
-          <Button />
+          <button>View Case</button>
         </ButtonWrapper>
 
-        <HomepageBannerImage />
+     
       </HomepageBannerContainer>
     );
   }

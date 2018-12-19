@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactModal from 'react-modal';
-
-import { MenuBar } from './styles';
+import DeptLogo from '../../Generic/logo/DeptLogo';
+import { MenuBar, StyledModal, UnstyledList, CloseButtonIcon, MenuButton } from './styles';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -23,13 +22,44 @@ class Navbar extends React.Component {
   render() {
     return (
       <MenuBar>
-        <span onClick={this.handleOpenModal}>MENU</span>
-        <ReactModal
+        <MenuButton onClick={this.handleOpenModal}>MENU</MenuButton>
+
+        <StyledModal
           isOpen={this.state.showModal}
           contentLabel="Minimal Modal Example"
+          color="black"
         >
-          <button onClick={this.handleCloseModal}>Close Modal</button>
-        </ReactModal>
+          <DeptLogo />
+
+          <CloseButtonIcon onClick={this.handleCloseModal} />
+
+          <UnstyledList>
+            <li>
+              <a href="https://www.deptagency.com/nl-nl/">Home</a>
+            </li>
+            <li>
+              <a href="https://www.deptagency.com/nl-nl/cases/">Work</a>
+            </li>
+            <li>
+              <a href="https://www.deptagency.com/about/">About</a>
+            </li>
+            <li>
+              <a href="https://www.deptagency.com/services/">Services</a>
+            </li>
+            <li>
+              <a href="https://www.deptagency.com/partners/">Partners</a>
+            </li>
+            <li>
+              <a href="https://www.deptagency.com/stories/">Stories</a>
+            </li>
+            <li>
+              <a href="https://www.deptagency.com/careers/">Careers</a>
+            </li>
+            <li>
+              <a href="https://www.deptagency.com/contact/">Contact</a>
+            </li>
+          </UnstyledList>
+        </StyledModal>
       </MenuBar>
     );
   }

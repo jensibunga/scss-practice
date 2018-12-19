@@ -1,44 +1,59 @@
 import styled from 'styled-components/macro';
 
 export const HomepageBannerContainer = styled.div`
-  @media only screen and (max-width: 540px) {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    position: relative;
-    width: 100%;
-    background-color: pink;
-  }
+  /* display: grid;
+  grid-template-columns: repeat(12, 1fr); */
+  position: relative;
+  height: 320px;
+  background: url('/images/Vacanselect-2-1440x810-c.jpg')  no-repeat center center fixed;
+    background-size: cover;
 
   @media only screen and (min-width: 541px) {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    position: relative;
     width: 100%;
-    background-color: orange;
+    height: 940px;
   }
 `;
 
 export const TopBarWrapper = styled.div`
-  grid-column: 1/-1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 999;
+  padding: 20px 20px 10px 20px;
+  border-bottom: 1px solid #f3f6f6;
+
+  @media (min-width: 541px) {
+    border: none;
+    background: none;
+    position: absolute;
+    /* width: 100%; */
+    grid-column-start: 2;
+    grid-column-end: 12;
+
+    height: 80px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  svg {
+    width: 55px;
+    height: 15px;
+
+    @media (min-width: 769px) {
+      height: 28px;
+    }
+  }
+`;
+
+export const TopBarWrapperContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 50px;
-  padding-bottom: 0;
-  @media only screen and (max-width: 540px) {
-    width: 100%;
-    height: 40px;
-    grid-column-start: 2;
-    grid-column-end: 12;
-  }
-  @media only screen and (min-width: 541px) {
-    position: absolute;
-    width: 100%;
-    grid-column-start: 2;
-    grid-column-end: 12;
+  @media (min-width: 541px) {
     border-bottom: 1px solid #0e0e0e;
-    height: 80px;
   }
 `;
 
@@ -75,25 +90,27 @@ export const ImageLogoName = styled.img`
   }
 `;
 export const TextWrapper = styled.div`
-  width: 100%;
-  grid-column: 2/7;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 `;
 export const TitleText = styled.h1`
-  position: absolute;
   font-family: Teko;
   color: #0e0e0e;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: 1;
+  font-size: 170px;
+  line-height: 0.6;
+  margin: 0;
+  position: absolute;
+  top: 100px;
+  left: 20px;
 
-  @media only screen and (max-width: 540px) {
-    font-size: 170px;
-    height: 170px;
-    line-height: 0.6;
-  }
   @media only screen and (min-width: 541px) {
     font-size: 200px;
     height: 200px;
+    left: 20px;
+    top: 300px;
   }
 
   @media (min-width: 768px) and (max-width: 1000px) {
@@ -108,34 +125,26 @@ export const TitleText = styled.h1`
 `;
 
 export const NavbarWrapper = styled.div`
-  /* position: absolute; */
   grid-column: 11/12;
 `;
 
 export const ButtonWrapper = styled.div`
-bottom: 100px;
-
-  @media only screen and (max-width: 540px) {
+  bottom: 100px;
     display: none;
-  }
+
   @media only screen and (min-width: 541px) {
-    /* grid-column: 10/12; */
-    grid-column-start: 10;
-    grid-column-end: 11;
-    /* grid-row: 11/12; */
-    position: absolute;
-    width: 170px;
-    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   button {
-    /* position: absolute; 
+    position: absolute;
     right: 100px;
-    bottom: -800px;*/
+    bottom: 100px;
+    width: 170px;
+    height: 50px;
     display: inline-block;
     border: none;
-    width: 100%;
-    height: 100%;
     text-decoration: none;
     font-weight: bold;
     font-stretch: normal;

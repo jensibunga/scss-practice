@@ -12,7 +12,7 @@ import Footer from '../Footer/Footer';
 import { Column, Space } from '../Home/styles';
 import axios from 'axios';
 
-import { Container, ButtonWrapper } from './styles';
+import { Container, ButtonWrapper, ContentContainer } from './styles';
 
 class Home extends React.Component {
   constructor(props) {
@@ -45,48 +45,50 @@ class Home extends React.Component {
         <Column start={1} end={-1}>
           <HomepageBanner />
         </Column>
-        <ButtonWrapper>
-          <ViewCaseButton />
-        </ButtonWrapper>
+        
         <Column start={1} end={-1}>
           <FilterBar />
         </Column>
 
-        {this.state.cases === 'loading' ? (
-          <div>Loading</div>
-        ) : (
-          <Column start={2} end={12}>
-            <Space margin={50} />
-            <FourCasesTemplate cases={this.state.cases.slice(0, 4)} />
-            {/* <FourCasesTemplate cases={this.state.cases.slice(2, 4)} /> */}
-            <Space margin={50} />
-            <ThreeCasesTemplate
-              cases={this.state.cases.slice(4, 7)}
-              case_image_position="left"
-            />
-            <Space margin={50} />
-            <TwoCasesTemplate cases={this.state.cases.slice(7, 9)} />
-            <Space margin={50} />
-            <ThreeCasesTemplate
-              cases={this.state.cases.slice(9, 12)}
-              case_image_position="right"
-            />
-            <Space margin={50} />
-            <FourCasesTemplate cases={this.state.cases.slice(12, 16)} />
-          </Column>
-        )}
-        <Column start={2} end={12}>
-          <Space margin={50} />
-          <Quote />
+        <Column start={1} end={-1}>
+          <ContentContainer>
+            {this.state.cases === 'loading' ? (
+              <div>Loading</div>
+            ) : (
+              <Column start={1} end={-1}>
+                <Space margin={50} />
+                <FourCasesTemplate cases={this.state.cases.slice(0, 4)} />
+            
+                <Space margin={50} />
+                <ThreeCasesTemplate
+                  cases={this.state.cases.slice(4, 7)}
+                  case_image_position="left"
+                />
+                <Space margin={50} />
+                <TwoCasesTemplate cases={this.state.cases.slice(7, 9)} />
+                <Space margin={50} />
+                <ThreeCasesTemplate
+                  cases={this.state.cases.slice(9, 12)}
+                  case_image_position="right"
+                />
+                <Space margin={50} />
+                <FourCasesTemplate cases={this.state.cases.slice(12, 16)} />
+              </Column>
+            )}
+            <Column start={1} end={-1}>
+              <Space margin={50} />
+              <Quote />
+            </Column>
+
+            {this.state.cases && (
+              <Column start={1} end={-1}>
+                <Space margin={50} />
+                <TwoCasesTemplate cases={this.state.cases.slice(16, 18)} />
+              </Column>
+            )}
+          </ContentContainer>
         </Column>
-
-        {this.state.cases && (
-          <Column start={2} end={12}>
-            <Space margin={50} />
-            <TwoCasesTemplate cases={this.state.cases.slice(16, 18)} />
-          </Column>
-        )}
-
+        
         <Column start={1} end={-1}>
           <Space margin={50} />
           <Clients />
@@ -96,7 +98,7 @@ class Home extends React.Component {
           <Space margin={50} />
           <ContactForm />
         </Column>
-        <Space margin={50} />
+        {/* <Space margin={50} /> */}
         <Footer />
       </Container>
     );
