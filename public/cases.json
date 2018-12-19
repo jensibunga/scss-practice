@@ -23,12 +23,7 @@
     "url": "https://www.deptagency.com",
     "image": "/images/gemeentemuseum.png"
   },
-  {
-    "client_name": "florensis",
-    "case_introduction": "Rethinking the entire online ecosystem",
-    "url": "https://www.deptagency.com",
-    "image": "/images/florensis.png"
-  },
+ 
   {
     "client_name": "microsoft",
     "case_introduction": "Tapping into Ireland's unique gaming culture and bringing a fresh flavour to their Xbox socialmedia channels",
@@ -40,6 +35,13 @@
     "case_introduction": "Integrating existing content into O'Neill's new e-commerce platform",
     "url": "https://www.deptagency.com",
     "image": "/images/o'neill.png"
+  },
+
+  {
+    "client_name": "florensis",
+    "case_introduction": "Rethinking the entire online ecosystem",
+    "url": "https://www.deptagency.com",
+    "image": "/images/florensis.png"
   },
   {
     "client_name": "be lighting",

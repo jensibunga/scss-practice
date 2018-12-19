@@ -7,9 +7,7 @@ import {
   TextWrapper,
   TitleText,
   ButtonWrapper,
-  LogoNameWrapper,
   ImageLogoName,
-  NavbarWrapper,
   TopBarWrapper,
 } from './styles';
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const HomepageBannerContainer = styled.div`
   @media only screen and (max-width: 540px) {
@@ -22,6 +22,10 @@ export const TopBarWrapper = styled.div`
   grid-column: 1/-1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  padding-top: 50px;
+  padding-bottom: 0;
   @media only screen and (max-width: 540px) {
     width: 100%;
     height: 40px;
@@ -109,13 +113,15 @@ export const NavbarWrapper = styled.div`
 `;
 
 export const ButtonWrapper = styled.div`
+bottom: 100px;
+
   @media only screen and (max-width: 540px) {
     display: none;
   }
   @media only screen and (min-width: 541px) {
     /* grid-column: 10/12; */
-    grid-column-start: 11;
-    grid-column-end: 12;
+    grid-column-start: 10;
+    grid-column-end: 11;
     /* grid-row: 11/12; */
     position: absolute;
     width: 170px;
@@ -123,9 +129,9 @@ export const ButtonWrapper = styled.div`
   }
 
   button {
-    position: absolute;
+    /* position: absolute; 
     right: 100px;
-    bottom: -800px;
+    bottom: -800px;*/
     display: inline-block;
     border: none;
     width: 100%;

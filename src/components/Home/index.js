@@ -9,18 +9,10 @@ import Clients from '../Clients/index';
 import Quote from '../Quote';
 import ContactForm from '../ContactForm/index';
 import Footer from '../Footer/Footer';
+import { Column } from '../Home/styles';
 import axios from 'axios';
 
-import {
-  Container,
-  HomepageBannerWrapper,
-  ButtonWrapper,
-  FilterBarWrapper,
-  ProjectWrapper,
-  ContactFormWrapper,
-  ClientWrapper,
-  QuoteWrapper,
-} from './styles';
+import { Container, ButtonWrapper } from './styles';
 
 class Home extends React.Component {
   constructor(props) {
@@ -50,52 +42,52 @@ class Home extends React.Component {
   render() {
     return (
       <Container>
-        <HomepageBannerWrapper>
+        <Column start={1} end={-1}>
           <HomepageBanner />
-        </HomepageBannerWrapper>
+        </Column>
         <ButtonWrapper>
           <ViewCaseButton />
         </ButtonWrapper>
-        <FilterBarWrapper>
+        <Column start={1} end={-1}>
           <FilterBar />
-        </FilterBarWrapper>
+        </Column>
 
         {this.state.cases === 'loading' ? (
           <div>Loading</div>
         ) : (
-          <ProjectWrapper>
+          <Column start={2} end={12}>
             <FourCasesTemplate cases={this.state.cases.slice(0, 4)} />
             {/* <FourCasesTemplate cases={this.state.cases.slice(2, 4)} /> */}
 
             <ThreeCasesTemplate
               cases={this.state.cases.slice(4, 7)}
-              position="right"
+              case_image_position="left"
             />
             <TwoCasesTemplate cases={this.state.cases.slice(7, 9)} />
             <ThreeCasesTemplate
               cases={this.state.cases.slice(9, 12)}
-              position="l"
+              case_image_position="right"
             />
             <FourCasesTemplate cases={this.state.cases.slice(12, 16)} />
-          </ProjectWrapper>
+          </Column>
         )}
-        <QuoteWrapper>
+        <Column start={2} end={12}>
           <Quote />
-        </QuoteWrapper>
+        </Column>
 
         {this.state.cases && (
-          <ProjectWrapper>
+        <Column start={2} end={12}>
             <TwoCasesTemplate cases={this.state.cases.slice(16, 18)} />
-          </ProjectWrapper>
+          </Column>
         )}
 
-        <ClientWrapper>
+        <Column start={1} end={-1}>
           <Clients />
-        </ClientWrapper>
+        </Column>
 
-        <ContactFormWrapper>
+        <Column start={1} end={-1}>
           <ContactForm />
-        </ContactFormWrapper>
+        </Column>
 
         <Footer />
       </Container>
