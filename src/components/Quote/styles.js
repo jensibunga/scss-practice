@@ -2,11 +2,10 @@ import styled from 'styled-components/macro';
 
 export const Wrapper = styled.div`
   display: grid;
-  grid-column: 4/8;
-  border-top: 1px solid #dddddd;
-  max-width: 1200px;
-
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 50px;
   h1 {
+    grid-column: 1/-1;
     font-family: Teko;
     font-size: 36px;
     font-weight: normal;
@@ -15,9 +14,6 @@ export const Wrapper = styled.div`
     line-height: 1.28;
     letter-spacing: normal;
     color: #272727;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: justify;
   }
   p {
     width: 359px;
@@ -30,9 +26,20 @@ export const Wrapper = styled.div`
     line-height: 2.31;
     letter-spacing: normal;
     color: #272727;
-    max-width: 600px;
-    margin: 50px auto  ;
-   
+  }
+
+  @media (min-width: 541px) {
+    border-top: 1px solid #dddddd;
+    max-width: 1200px;
+
+    h1 {
+      margin-top: 50px;
+      grid-column: 4/11;
+    }
+    p {
+      grid-column: 4/7;
     
+    
+    }
   }
 `;

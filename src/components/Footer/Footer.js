@@ -1,11 +1,12 @@
 import React from 'react';
+import DeptLogo from '../../Generic/logo/DeptLogo';
 import { FooterWrapper } from './styles';
 
 class Footer extends React.Component {
   render() {
     return (
       <FooterWrapper>
-        <h1>HelloWorld</h1>
+        <DeptLogo />
       </FooterWrapper>
     );
   }

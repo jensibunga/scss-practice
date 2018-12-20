@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import Form from './Form';
 
 export const Wrapper = styled.div`
   position: relative;
@@ -21,12 +20,16 @@ export const Wrapper = styled.div`
 `;
 export const StyledFormWrapper = styled.div`
   width: 600px;
-  position: absolute;
   top: 0;
   right: 224px;
-  max-width: 1200px;
-  margin: 0 auto;
+
+
+  @media (min-width: 541px) {
+    width: 600px;
+    position: absolute;
+    top: 0;
+    right: 224px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 `;
-// export const StyledFormContent = styled(Form)`
- 
-// `;
