@@ -4,6 +4,8 @@ export const Wrapper = styled.div`
   display: grid;
   grid-column: 4/8;
   border-top: 1px solid #dddddd;
+  max-width: 1200px;
+
   h1 {
     font-family: Teko;
     font-size: 36px;
@@ -13,6 +15,9 @@ export const Wrapper = styled.div`
     line-height: 1.28;
     letter-spacing: normal;
     color: #272727;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
   }
   p {
     width: 359px;
@@ -25,5 +30,9 @@ export const Wrapper = styled.div`
     line-height: 2.31;
     letter-spacing: normal;
     color: #272727;
+    max-width: 600px;
+    margin: 50px auto  ;
+   
+    
   }
 `;

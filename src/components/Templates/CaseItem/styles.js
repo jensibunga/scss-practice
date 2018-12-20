@@ -3,9 +3,6 @@ import styled from 'styled-components/macro';
 export const CaseWrapper = styled.div`
 
 `;
-
-
-
 export const CaseImage = styled.img`
   height: 500px;
   width: 100%;

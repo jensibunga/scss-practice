@@ -1,15 +1,9 @@
 import React from 'react';
-import {
-  CaseWrapper,
-  CaseImage,
-  UnstyledLink,
-  StyledClientName,
-  Title,
-} from './styles';
+import { CaseImage, UnstyledLink, StyledClientName, Title } from './styles';
 
 const Caseitem = props => {
   return (
-    <CaseWrapper>
+    <div>
       {props.image && <CaseImage src={props.image} />}
 
       <StyledClientName>{props.client_name}</StyledClientName>
@@ -21,7 +15,7 @@ const Caseitem = props => {
           View Source
         </span>
       </UnstyledLink>
-    </CaseWrapper>
+    </div>
   );
 };
 
