@@ -47,10 +47,10 @@ export const CloseButtonIcon = styled.div`
 `;
 export const StyledModal = styled(ReactModal)`
   position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   border: 1px solid rgb(204, 204, 204);
   background: #0e0e0e;
   overflow: auto;
@@ -58,6 +58,12 @@ export const StyledModal = styled(ReactModal)`
   outline: none;
   padding: 20px;
   z-index: 9999;
+  @media (min-width: 541px) {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+  }
 `;
 
 export const UnstyledList = styled.ul`
