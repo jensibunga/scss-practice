@@ -8,6 +8,7 @@ import Clients from '../Clients/index';
 import Quote from '../Quote';
 import ContactForm from '../ContactForm/index';
 import Footer from '../Footer/Footer';
+import Loading from '../../Loading/Loading';
 import { Column, Space } from '../Home/styles';
 import axios from 'axios';
 
@@ -31,7 +32,7 @@ class Home extends React.Component {
           this.setState({
             cases: response.data,
           });
-        }, 3000);
+        }, 5 * 1000);
       })
       .catch(error => {
         console.log('error', error);
@@ -52,7 +53,7 @@ class Home extends React.Component {
         <Column start={1} end={-1}>
           <ContentContainer>
             {this.state.cases === 'loading' ? (
-              <div>Loading</div>
+              <Loading />
             ) : (
               <Column start={1} end={-1}>
                 <Space margin={50} />
@@ -97,7 +98,7 @@ class Home extends React.Component {
           <Space margin={50} />
           <ContactForm />
         </Column>
-     
+
         <Footer />
       </Container>
     );
