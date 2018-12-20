@@ -46,9 +46,9 @@ class Home extends React.Component {
           <HomepageBanner />
         </Column>
 
-        <Column start={1} end={-1}>
+        {/* <Column start={1} end={-1}>
           <FilterBar />
-        </Column>
+        </Column> */}
 
         <Column start={1} end={-1}>
           <ContentContainer>
