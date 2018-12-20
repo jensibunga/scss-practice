@@ -1,8 +1,6 @@
 import styled from 'styled-components/macro';
 
-export const CaseWrapper = styled.div`
-
-`;
+export const CaseWrapper = styled.div``;
 export const CaseImage = styled.img`
   height: 500px;
   width: 100%;
@@ -34,14 +32,20 @@ export const Title = styled.div`
 
 export const UnstyledLink = styled.div`
   grid-column: 1/2;
+
   @media (min-width: 541px) {
     text-decoration: none;
     line-height: 30px;
     color: #1a18f7;
     size: 14px;
     font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
   }
-  span {
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
     @media (max-width: 540px) {
       display: none;
     }
