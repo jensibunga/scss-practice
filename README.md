@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+# Dept Assignment 
+
+## Technologies Used
+React
+React Drip Form
+Styled Components
+React Modal
+## URL 
+Project URL: [https://dept-platform.firebaseapp.com/](https://dept-platform.firebaseapp.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
