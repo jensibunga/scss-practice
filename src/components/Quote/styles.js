@@ -14,4 +14,16 @@ export const Wrapper = styled.div`
     letter-spacing: normal;
     color: #272727;
   }
+  p {
+    width: 359px;
+    height: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
+    color: #272727;
+  }
 `;

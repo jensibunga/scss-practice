@@ -1,7 +1,5 @@
 import styled from 'styled-components/macro';
 import ReactModal from 'react-modal';
-import DeptLogo from '../../Generic/logo/DeptLogo';
-import { ImageLogoName } from '../HomepageBanner/styles';
 
 export const MenuBar = styled.div`
   line-height: 30px;
@@ -33,9 +31,7 @@ export const MenuBar = styled.div`
   }
 `;
 
-export const MenuButton = styled.span`
-  
-`;
+export const MenuButton = styled.span``;
 
 export const CloseButtonIcon = styled.div`
   background-image: url('/images/cancel.svg');

@@ -3,12 +3,10 @@ import DeptLogo from '../../Generic/logo/DeptLogo';
 import Navbar from '../NavBar/index';
 
 import {
-  HomepageBannerImage,
   HomepageBannerContainer,
   TextWrapper,
   TitleText,
   ButtonWrapper,
-  ImageLogoName,
   TopBarWrapper,
   TopBarWrapperContent
 } from './styles';

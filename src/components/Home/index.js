@@ -3,7 +3,6 @@ import FourCasesTemplate from '../Templates/FourCasesTemplate';
 import ThreeCasesTemplate from '../Templates/ThreeCasesTemplate';
 import TwoCasesTemplate from '../Templates/TwoCasesTemplate';
 import HomepageBanner from '../HomepageBanner/index';
-import ViewCaseButton from '../ViewCaseButton/index';
 import FilterBar from '../FilterBar/index';
 import Clients from '../Clients/index';
 import Quote from '../Quote';
@@ -12,7 +11,7 @@ import Footer from '../Footer/Footer';
 import { Column, Space } from '../Home/styles';
 import axios from 'axios';
 
-import { Container, ButtonWrapper, ContentContainer } from './styles';
+import { Container, ContentContainer } from './styles';
 
 class Home extends React.Component {
   constructor(props) {
@@ -45,7 +44,7 @@ class Home extends React.Component {
         <Column start={1} end={-1}>
           <HomepageBanner />
         </Column>
-        
+
         <Column start={1} end={-1}>
           <FilterBar />
         </Column>
@@ -58,7 +57,7 @@ class Home extends React.Component {
               <Column start={1} end={-1}>
                 <Space margin={50} />
                 <FourCasesTemplate cases={this.state.cases.slice(0, 4)} />
-            
+
                 <Space margin={50} />
                 <ThreeCasesTemplate
                   cases={this.state.cases.slice(4, 7)}
@@ -88,7 +87,7 @@ class Home extends React.Component {
             )}
           </ContentContainer>
         </Column>
-        
+
         <Column start={1} end={-1}>
           <Space margin={50} />
           <Clients />
@@ -98,7 +97,7 @@ class Home extends React.Component {
           <Space margin={50} />
           <ContactForm />
         </Column>
-        {/* <Space margin={50} /> */}
+     
         <Footer />
       </Container>
     );

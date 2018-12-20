@@ -8,12 +8,12 @@ export const Wrapper = styled.div`
 
 export const ClientHeader = styled.div`
   grid-column: 4/10;
+  margin-top: 50px;
 
   > h1 {
     height: 32px;
     font-family: Teko;
     font-size: 60px;
-
     text-align: center;
     font-weight: normal;
     font-style: normal;
@@ -35,6 +35,8 @@ export const ClientHeader = styled.div`
     letter-spacing: normal;
     text-align: center;
     color: #0e0e0e;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   @media (max-width: 540px) {
@@ -43,8 +45,6 @@ export const ClientHeader = styled.div`
 `;
 
 export const LogoWrapper = styled.div`
-  /* display: inline-flex;
-  flex-direction: space-around; */
   display: flex;
   justify-content: space-around;
   height: 161px;
@@ -59,7 +59,10 @@ export const LogoGrid = styled.div`
   display: grid;
   grid-column: 2/12;
   grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 50px auto;
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
   }
 `;

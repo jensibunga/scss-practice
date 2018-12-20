@@ -1,8 +1,6 @@
 import styled from 'styled-components/macro';
 
 export const HomepageBannerContainer = styled.div`
-  /* display: grid;
-  grid-template-columns: repeat(12, 1fr); */
   position: relative;
   height: 320px;
   background: url('/images/Vacanselect-2-1440x810-c.jpg')  no-repeat center center fixed;
@@ -28,7 +26,6 @@ export const TopBarWrapper = styled.div`
     border: none;
     background: none;
     position: absolute;
-    /* width: 100%; */
     grid-column-start: 2;
     grid-column-end: 12;
 
