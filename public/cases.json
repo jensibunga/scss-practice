@@ -7,52 +7,53 @@
     "url": "/work/bol.com"
   },
   {
-    "client_name": "kempen",
+    "client_name": "ampleon",
     "case_introduction": "Not some average banking website",
     "image": "/images/Ampleon-Featured-image-2-585x585-c.jpg",
     "image_wide": "/images/Ampleon-Featured-image-2-1200x675-c.jpg",
     "url": "/work/ampleon"
   },
   {
-    "client_name": "philips",
+    "client_name": "new10",
     "case_introduction": "Beautiful design meets innovative technology",
     "image": "/images/Header-New10-585x585-c.jpg",
     "image_wide": "/images/Header-New10-1200x675-c.jpg",
     "url": "/work/new10"
   },
   {
-    "client_name": "gemeentemuseum",
+    "client_name": "Allianz",
     "case_introduction": "A 100 years of Mondriaan & de Stijl",
     "image": "/images/Allianz-half-width-2-1-585x585-c.png",
     "image_wide": "/images/Allianz-half-width-2-1-1200x675-c.png",
     "url": "/work/allianz"
   },
-
   {
     "client_name": "microsoft",
     "case_introduction": "Tapping into Ireland's unique gaming culture and bringing a fresh flavour to their Xbox socialmedia channels",
+    "image": "/images/Windows-header-585x585-c.jpg",
+    "image_wide": "/images/Windows-header-1200x675-c.jpg",
     "url": "/work/microsoft"
   },
   {
-    "client_name": "o'neill",
+    "client_name": "Windows",
     "case_introduction": "Integrating existing content into O'Neill's new e-commerce platform",
-    "url": "https://www.deptagency.com",
-    "image": "/images/o'neill.png"
+    "image": "/images/Windows-header-585x585-c.jpg",
+    "image_wide": "/images/Windows-header-1200x675-c.jpg",
+    "url": "/work/windows"
   },
-
   {
     "client_name": "florensis",
     "case_introduction": "Rethinking the entire online ecosystem",
     "image": "/images/GE-header-2-585x585-c.jpg",
     "image_wide": "/images/GE-header-2-1200x675-c.jpg",
-    "url": "/work/ge"
+    "url": "/work/florensis"
   },
   {
     "client_name": "be lighting",
     "case_introduction": "Delivering clarity on a global scale",
     "image": "/images/De-homepage-header-3-585x585-c.jpg",
     "image_wide": "/images/De-homepage-header-3-1200x675-c.jpg",
-    "url": "/work/de"
+    "url": "/work/be-lighting"
   },
   {
     "client_name": "tui",
@@ -64,8 +65,9 @@
   {
     "client_name": "butlins",
     "case_introduction": "Enhancing customer experience for personalised holiday planning using real time data",
-    "url": "https://www.deptagency.com",
-    "image": "/images/butlins.png"
+    "image": "/images/Butlins-featured-optie-2-585x585-c.jpg",
+    "image_wide": "/images/Butlins-featured-optie-2-1200x675-c.jpg",
+    "url": "/work/butlins"
   },
   {
     "client_name": "vacanseselect",
@@ -79,7 +81,7 @@
     "case_introduction": "Rethinking the entire online ecosystem",
     "image": "/images/Header-New10-585x585-c.jpg",
     "image_wide": "/images/Header-New10-1200x675-c.jpg",
-    "url": "/work/new10"
+    "url": "/work/florensis"
   },
   {
     "client_name": "chocomel",
@@ -93,28 +95,28 @@
     "case_introduction": "Live like a champion with Jerome Boateng",
     "image": "/images/Nemo-case-header-585x585-c.png",
     "image_wide": "/images/Nemo-case-header-1200x675-c.png",
-    "url": "/work/nemo"
+    "url": "/work/jbl"
   },
   {
     "client_name": "zalando",
     "case_introduction": "Innovative SEO and content strategy for Zalando",
     "image": "/images/Rituals-1-585x585-c.jpg",
     "image_wide": "/images/Rituals-1-1200x675-c.jpg",
-    "url": "/work/rituals"
+    "url": "/work/zalando"
   },
   {
     "client_name": "koninklijke bibliotheek",
     "case_introduction": "The search for the most influential book ever",
     "image": "/images/Uganda-CTA-033-585x585-c.jpg",
     "image_wide": "/images/Uganda-CTA-033-1200x675-c.jpg",
-    "url": "/work/Artsen zonder grenzen"
+    "url": "/work/koninklijke-bibliotheek"
   },
   {
     "client_name": "liberty global",
     "case_introduction": "Delivering complex commerce solutions",
     "image": "/images/Windows-header-585x585-c.jpg",
     "image_wide": "/images/Windows-header-1200x675-c.jpg",
-    "url": "/work/microsoft"
+    "url": "/work/liberty"
   },
   {
     "client_name": "arla",
