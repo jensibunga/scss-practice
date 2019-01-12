@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from './Form';
-import { Wrapper, StyledFormWrapper } from './styles';
+
 
 class ContactForm extends React.Component {
 
@@ -10,12 +10,12 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <Wrapper>
+      <div className="contact-form-wrapper">
         <h1>Question? We are here to help!</h1>
-        <StyledFormWrapper>
+        <div className="form-wrapper">
           <Form onValidSubmit={this.handleSubmit} onSubmit={this.handleSubmit} />
-        </StyledFormWrapper>
-      </Wrapper>
+        </div>
+      </div>
     );
   }
 }

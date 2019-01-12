@@ -1,21 +1,20 @@
 import React from 'react';
-import { CaseImage, UnstyledLink, StyledClientName, Title } from './styles';
 
 const Caseitem = props => {
   return (
     <div>
-      {props.image && <CaseImage src={props.image} />}
+      {props.image && <img className="case-image" src={props.image} alt={props.image} />}
 
-      <StyledClientName>{props.client_name}</StyledClientName>
-      <Title>{props.case_introduction}</Title>
+      <div  className="client-name">{props.client_name}</div>
+      <div className="title">{props.case_introduction}</div>
 
-      <UnstyledLink  href={props.url}>
+      <div className="unstyled-link" href={props.url}>
         <a   href={props.url}  tabIndex="0">
           <i className="fa fa-caret-right" />
           
           View Case
         </a>
-      </UnstyledLink>
+      </div>
     </div>
   );
 };

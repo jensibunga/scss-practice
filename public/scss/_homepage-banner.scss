@@ -1,18 +1,17 @@
-import styled from 'styled-components/macro';
-
-export const HomepageBannerContainer = styled.div`
+.homepage-banner-container {
   position: relative;
   height: 320px;
-  background: url('/images/Vacanselect-2-1440x810-c.jpg')  no-repeat center center fixed;
-    background-size: cover;
+  background: url('/images/Vacanselect-2-1440x810-c.jpg') no-repeat center
+    center fixed;
+  background-size: cover;
 
   @media only screen and (min-width: 541px) {
     width: 100%;
     height: 940px;
   }
-`;
+}
 
-export const TopBarWrapper = styled.div`
+.top-bar-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -28,71 +27,70 @@ export const TopBarWrapper = styled.div`
     position: absolute;
     grid-column-start: 2;
     grid-column-end: 12;
-
     height: 80px;
-
     max-width: 1200px;
     margin: 0 auto;
   }
   svg {
     width: 55px;
     height: 15px;
-
     @media (min-width: 769px) {
       height: 28px;
     }
   }
-`;
+}
 
-export const TopBarWrapperContent = styled.div`
-  display: flex;
+.top-bar-wrapper-content {
+    display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: 541px) {
     border-bottom: 1px solid #0e0e0e;
   }
-`;
+}
 
-export const HomepageBannerImage = styled.img`
-  @media only screen and (max-width: 540px) {
-    grid-column: 1/-1;
-    height: 320px;
-    width: 100%;
-  }
-  @media only screen and (min-width: 541px) {
-    grid-column: 1/-1;
-    height: 940px;
-    width: 100%;
-  }
-`;
+.homepage-banner-image {
+    @media only screen and (max-width: 540px) {
+        grid-column: 1/-1;
+        height: 320px;
+        width: 100%;
+      }
+      @media only screen and (min-width: 541px) {
+        grid-column: 1/-1;
+        height: 940px;
+        width: 100%;
+      }
+}
 
-export const LogoNameWrapper = styled.div`
-  grid-column: 2/12;
+.logo-name-wrapper {
+    grid-column: 2/12;
   position: absolute;
   border-bottom: 1px solid #0e0e0e;
   width: 100%;
-`;
+}
 
-export const ImageLogoName = styled.img`
-  @media only screen and (max-width: 540px) {
-    height: 14px;
-    width: 50px;
-    padding: 15px 0 15px 0;
-  }
-  @media only screen and (min-width: 541px) {
-    height: 28px;
-    width: 100px;
-    padding: 20px 0 20px 0;
-  }
-`;
-export const TextWrapper = styled.div`
-  max-width: 1200px;
+.image-logo-name{
+    @media only screen and (max-width: 540px) {
+        height: 14px;
+        width: 50px;
+        padding: 15px 0 15px 0;
+      }
+      @media only screen and (min-width: 541px) {
+        height: 28px;
+        width: 100px;
+        padding: 20px 0 20px 0;
+      }
+}
+
+.work-text-wrapper{
+    max-width: 1200px;
   margin: 0 auto;
   position: relative;
-`;
-export const TitleText = styled.h1`
-  font-family: Teko;
+}
+
+.work-title-text{
+    font-family: Teko;
   color: #0e0e0e;
   font-weight: normal;
   letter-spacing: normal;
@@ -119,14 +117,14 @@ export const TitleText = styled.h1`
     font-size: 400px;
     height: 400px;
   }
-`;
+}
 
-export const NavbarWrapper = styled.div`
-  grid-column: 11/12;
-`;
+.navbar-wrapper {
+    grid-column: 11/12;
+}
 
-export const ButtonWrapper = styled.div`
-  bottom: 100px;
+.button-wrapper {
+    bottom: 100px;
     display: none;
 
   @media only screen and (min-width: 541px) {
@@ -155,4 +153,4 @@ export const ButtonWrapper = styled.div`
     background-color: #0e0e0e;
     font-family: Helvetica, Arial, sans-serif;
   }
-`;
+}

@@ -6,12 +6,3 @@ body {
   height: 100%;
 }
 
-.ReactModal__Overlay--after-open {
-  z-index: 9999;
-}
-
-.ReactModal__Overlay--after-open .logo {
-  fill: #fff;
-  width: 100px;
-  height: 28px;
-}

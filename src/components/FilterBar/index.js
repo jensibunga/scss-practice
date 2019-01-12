@@ -1,12 +1,12 @@
 import React from 'react';
-import { Wrapper } from './styles';
+
 
 class ContactForm extends React.Component {
   render() {
     return (
-      <Wrapper>
+      <div className="filter-bar">
         <h1>Filter</h1>
-      </Wrapper>
+      </div>
     );
   }
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import Caseitem from '../CaseItem/index';
-import { Wrapper } from '../styles';
+
 
 class FourCasesTemplate extends React.Component {
   render() {
     return (
       this.props.cases && (
-        <Wrapper>
+        <article className="case-item-wrapper">
           {this.props.cases.map(item => {
             return (
               <Caseitem
@@ -17,7 +17,7 @@ class FourCasesTemplate extends React.Component {
               />
             );
           })}
-        </Wrapper>
+        </article>
       )
     );
   }

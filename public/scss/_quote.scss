@@ -1,6 +1,4 @@
-import styled from 'styled-components/macro';
-
-export const Wrapper = styled.div`
+.quote-wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-top: 50px;
@@ -38,8 +36,6 @@ export const Wrapper = styled.div`
     }
     p {
       grid-column: 4/7;
-    
-    
     }
   }
-`;
+}

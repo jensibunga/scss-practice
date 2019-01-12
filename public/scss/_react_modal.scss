@@ -1,0 +1,39 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.Modal  {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid rgb(204, 204, 204);
+  background: #0e0e0e;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  z-index: 9999;
+  @media (min-width: 541px) {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+  }
+}
+
+.ReactModal__Overlay--after-open {
+  z-index: 9999;
+}
+  
+.ReactModal__Overlay--after-open .logo {
+  fill: #fff;
+  width: 100px;
+  height: 28px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledFormContent } from './styles';
+
 import { dripForm } from 'react-drip-form';
 import Input from './Input';
 

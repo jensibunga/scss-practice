@@ -9,10 +9,8 @@ import Quote from '../Quote';
 import ContactForm from '../ContactForm/index';
 import Footer from '../Footer/Footer';
 import Loading from '../../Loading/Loading';
-import { Column, Space } from '../Home/styles';
+import { Space } from '../Home/styles';
 import axios from 'axios';
-
-import { Container, ContentContainer } from './styles';
 
 class Home extends React.Component {
   constructor(props) {
@@ -41,66 +39,67 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Container>
-        <Column start={1} end={-1}>
+      <div className="container">
+        <div className="column-start-1 column-end--1">
           <HomepageBanner />
-        </Column>
+        </div>
 
         {/* <Column start={1} end={-1}>
           <FilterBar />
         </Column> */}
 
-        <Column start={1} end={-1}>
-          <ContentContainer>
+        <div className="column-start-1 column-end--1">
+          <div className="content-container">
             {this.state.cases === 'loading' ? (
               <Loading />
             ) : (
-              <Column start={1} end={-1}>
-                <Space margin={50} />
+              <div className="column-start-1 column-end--1">
+                
+                <div className="mt-50" />
                 <FourCasesTemplate cases={this.state.cases.slice(0, 4)} />
 
-                <Space margin={50} />
+                <div className="mt-50" />
                 <ThreeCasesTemplate
                   cases={this.state.cases.slice(4, 7)}
                   case_image_position="left"
                 />
-                <Space margin={50} />
+                <div className="mt-50" />
                 <TwoCasesTemplate cases={this.state.cases.slice(7, 9)} />
-                <Space margin={50} />
+                <div className="mt-50" />
                 <ThreeCasesTemplate
                   cases={this.state.cases.slice(9, 12)}
                   case_image_position="right"
                 />
-                <Space margin={50} />
+                <div className="mt-50" />
                 <FourCasesTemplate cases={this.state.cases.slice(12, 16)} />
-              </Column>
+              </div>
             )}
-            <Column start={1} end={-1}>
-              <Space margin={50} />
+            <div className="column-start-1 column-end--1">
+            <div className="mt-50" />
               <Quote />
-            </Column>
 
-            {this.state.cases && (
-              <Column start={1} end={-1}>
-                <Space margin={50} />
-                <TwoCasesTemplate cases={this.state.cases.slice(16, 18)} />
-              </Column>
-            )}
-          </ContentContainer>
-        </Column>
+              {this.state.cases && (
+                <div clasName="column-start-1 column-end--1">
+                 <div className="mt-50" />
+                  <TwoCasesTemplate cases={this.state.cases.slice(16, 18)} />
+                </div>
+              )}
+            </div>
+          </div>
 
-        <Column start={1} end={-1}>
-          <Space margin={50} />
-          <Clients />
-        </Column>
+          <div className="column-start-1 column-end--1">
+          <div className="mt-50" />
+            <Clients />
+          </div>
 
-        <Column start={1} end={-1}>
-          <Space margin={50} />
-          <ContactForm />
-        </Column>
+          <div className="column-start-1 column-end--1">
+          <div className="mt-50" />
+            <ContactForm />
+          </div>
 
-        <Footer />
-      </Container>
+          <Footer />
+        </div>
+      </div>
     );
   }
 }

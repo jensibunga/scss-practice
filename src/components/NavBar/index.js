@@ -1,7 +1,6 @@
 import React from 'react';
 import DeptLogo from '../../Generic/logo/DeptLogo';
-import { MenuBar, StyledModal, UnstyledList, CloseButtonIcon, MenuButton } from './styles';
-
+import ReactModal from 'react-modal';
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -21,19 +20,21 @@ class Navbar extends React.Component {
   }
   render() {
     return (
-      <MenuBar>
-        <MenuButton onClick={this.handleOpenModal}>MENU</MenuButton>
+      <div className="menu-bar">
+        <span onClick={this.handleOpenModal}>MENU</span>
 
-        <StyledModal
+        <ReactModal
           isOpen={this.state.showModal}
           contentLabel="Minimal Modal Example"
           color="black"
-        >
+          className="Modal"
+          overlayClassName="Overlay"
+       >
           <DeptLogo />
 
-          <CloseButtonIcon onClick={this.handleCloseModal} />
+          <div className="close-button-icon" onClick={this.handleCloseModal} />
 
-          <UnstyledList>
+          <ul className="unstyled-list">
             <li>
               <a href="https://www.deptagency.com/nl-nl/">Home</a>
             </li>
@@ -58,9 +59,9 @@ class Navbar extends React.Component {
             <li>
               <a href="https://www.deptagency.com/contact/">Contact</a>
             </li>
-          </UnstyledList>
-        </StyledModal>
-      </MenuBar>
+          </ul>
+        </ReactModal>
+      </div>
     );
   }
 }

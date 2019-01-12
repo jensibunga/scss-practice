@@ -1,12 +1,10 @@
-import styled from 'styled-components/macro';
-
-export const Wrapper = styled.div`
+.client-wrapper {
   background-color: #f3f6f6;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-`;
+}
 
-export const ClientHeader = styled.div`
+.client-header {
   grid-column: 4/10;
   margin-top: 50px;
 
@@ -42,20 +40,9 @@ export const ClientHeader = styled.div`
   @media (max-width: 540px) {
     grid-column: 2/12;
   }
-`;
+}
 
-export const LogoWrapper = styled.div`
-  display: flex;
-  justify-content: space-around;
-  height: 161px;
-
-  img {
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-  }
-`;
-export const LogoGrid = styled.div`
+.logo-grid {
   display: grid;
   grid-column: 2/12;
   grid-template-columns: repeat(4, 1fr);
@@ -65,4 +52,16 @@ export const LogoGrid = styled.div`
     grid-template-columns: repeat(2, 1fr);
     max-width: 1200px;
   }
-`;
+}
+
+.logo-wrapper{
+    display: flex;
+    justify-content: space-around;
+    height: 161px;
+  
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
+}

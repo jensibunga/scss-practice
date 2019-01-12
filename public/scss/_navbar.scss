@@ -1,7 +1,4 @@
-import styled from 'styled-components/macro';
-import ReactModal from 'react-modal';
-
-export const MenuBar = styled.div`
+.menu-bar {
   line-height: 30px;
   height: 30px;
   &:hover {
@@ -28,12 +25,14 @@ export const MenuBar = styled.div`
     letter-spacing: 3px;
     color: #0e0e0e;
     text-decoration: none;
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
   }
-`;
+}
 
-export const MenuButton = styled.span``;
-
-export const CloseButtonIcon = styled.div`
+.close-button-icon {
   background-image: url('/images/cancel.svg');
   width: 25px;
   height: 25px;
@@ -44,29 +43,9 @@ export const CloseButtonIcon = styled.div`
   &:hover {
     cursor: pointer;
   }
-`;
-export const StyledModal = styled(ReactModal)`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  border: 1px solid rgb(204, 204, 204);
-  background: #0e0e0e;
-  overflow: auto;
-  border-radius: 4px;
-  outline: none;
-  padding: 20px;
-  z-index: 9999;
-  @media (min-width: 541px) {
-    top: 40px;
-    left: 40px;
-    right: 40px;
-    bottom: 40px;
-  }
-`;
+}
 
-export const UnstyledList = styled.ul`
+.unstyled-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -113,4 +92,4 @@ export const UnstyledList = styled.ul`
   li {
     border-bottom: 1px solid #272727;
   }
-`;
+}

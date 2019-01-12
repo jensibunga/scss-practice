@@ -1,6 +1,4 @@
-import styled from 'styled-components/macro';
-
-export const FooterWrapper = styled.div`
+.footer-wrapper {
   position: relative;
   grid-column: 1 /-1;
   background-color: #0e0e0e;
@@ -13,4 +11,4 @@ export const FooterWrapper = styled.div`
 
     fill: #ffffff;
   }
-`;
+}
