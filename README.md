@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 #### React
 #### React Drip Form
-#### Styled Components
+#### SCSS
 #### React Modal
 
 ## Project URL 
