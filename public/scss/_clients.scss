@@ -7,8 +7,8 @@
 .client-header {
   grid-column: 4/10;
   margin-top: 50px;
-
-  > h1 {
+  
+ .title {
     height: 32px;
     font-family: Teko;
     font-size: 60px;
@@ -22,7 +22,7 @@
     color: #0e0e0e;
     text-transform: uppercase;
   }
-  > p {
+  .client-comment {
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     font-size: 17px;
@@ -59,7 +59,7 @@
     justify-content: space-around;
     height: 161px;
   
-    img {
+    .logo-image{
       width: 100%;
       height: auto;
       max-height: 100%;

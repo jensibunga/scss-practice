@@ -21,7 +21,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="menu-bar">
-        <span onClick={this.handleOpenModal}>MENU</span>
+        <span className="menu-link" onClick={this.handleOpenModal}>MENU</span>
 
         <ReactModal
           isOpen={this.state.showModal}
@@ -35,29 +35,29 @@ class Navbar extends React.Component {
           <div className="close-button-icon" onClick={this.handleCloseModal} />
 
           <ul className="unstyled-list">
-            <li>
-              <a href="https://www.deptagency.com/nl-nl/">Home</a>
+            <li className="menu-list">
+              <a  className="menu-link" href="https://www.deptagency.com/nl-nl/">Home</a>
             </li>
-            <li>
-              <a href="https://www.deptagency.com/nl-nl/cases/">Work</a>
+            <li className="menu-list">
+              <a   className="menu-link" href="https://www.deptagency.com/nl-nl/cases/">Work</a>
             </li>
-            <li>
-              <a href="https://www.deptagency.com/about/">About</a>
+            <li className="menu-list">
+              <a   className="menu-link" href="https://www.deptagency.com/about/">About</a>
             </li>
-            <li>
-              <a href="https://www.deptagency.com/services/">Services</a>
+            <li className="menu-list">
+              <a   className="menu-link" href="https://www.deptagency.com/services/">Services</a>
             </li>
-            <li>
-              <a href="https://www.deptagency.com/partners/">Partners</a>
+            <li className="menu-list">
+              <a  className="menu-link"  href="https://www.deptagency.com/partners/">Partners</a>
             </li>
-            <li>
-              <a href="https://www.deptagency.com/stories/">Stories</a>
+            <li className="menu-list">
+              <a   className="menu-link" href="https://www.deptagency.com/stories/">Stories</a>
             </li>
-            <li>
-              <a href="https://www.deptagency.com/careers/">Careers</a>
+            <li className="menu-list">
+              <a   className="menu-link" href="https://www.deptagency.com/careers/">Careers</a>
             </li>
-            <li>
-              <a href="https://www.deptagency.com/contact/">Contact</a>
+            <li className="menu-list">
+              <a   className="menu-link" href="https://www.deptagency.com/contact/">Contact</a>
             </li>
           </ul>
         </ReactModal>

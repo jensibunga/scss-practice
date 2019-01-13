@@ -25,8 +25,8 @@ class Clients extends React.Component {
     return (
       <div className="client-wrapper">
         <div className="client-header">
-          <h1>Clients</h1>
-          <p>
+          <h1 className="title">Clients</h1>
+          <p className="client-comment">
             We value a great working relationship with our clients above all
             else. It's why they often come to our parties . It's also why we're
             able to challenge and inspire them to reach for the stars.
@@ -37,7 +37,7 @@ class Clients extends React.Component {
             this.state.clients.map(item => {
               return (
                 <div className="logo-wrapper">
-                  <img src={item.logo} alt={item.name} />
+                  <img className="logo-image" src={item.logo} alt={item.name} />
                 </div>
               );
             })}

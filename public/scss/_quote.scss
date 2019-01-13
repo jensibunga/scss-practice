@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-top: 50px;
-  h1 {
+  .quote-title {
     grid-column: 1/-1;
     font-family: Teko;
     font-size: 36px;
@@ -13,7 +13,7 @@
     letter-spacing: normal;
     color: #272727;
   }
-  p {
+  .quote-information {
     width: 359px;
     height: 30px;
     font-family: Helvetica, Arial, sans-serif;
@@ -30,11 +30,11 @@
     border-top: 1px solid #dddddd;
     max-width: 1200px;
 
-    h1 {
+    .quote-title {
       margin-top: 50px;
       grid-column: 4/11;
     }
-    p {
+    .quote-information {
       grid-column: 4/7;
     }
   }

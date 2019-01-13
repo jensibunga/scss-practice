@@ -35,14 +35,14 @@
     font-weight: bold;
   }
 }
-.unstyled-link a {
+.unstyled-link .case-link {
   text-decoration: none;
   text-transform: uppercase;
   size: 14px;
   font-family: Helvetica, Arial, sans-serif;
 }
 @media (max-width: 540px) {
-  .unstyled-link a {
+  .unstyled-link .case-link {
     display: none;
   }
 }
@@ -90,7 +90,7 @@
   grid-column: 4/10;
   margin-top: 50px;
 }
-.client-header > h1 {
+.client-header .title {
   height: 32px;
   font-family: Teko;
   font-size: 60px;
@@ -104,7 +104,7 @@
   color: #0e0e0e;
   text-transform: uppercase;
 }
-.client-header > p {
+.client-header .client-comment {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 17px;
@@ -143,7 +143,7 @@
   justify-content: space-around;
   height: 161px;
 }
-.logo-wrapper img {
+.logo-wrapper .logo-image {
   width: 100%;
   height: auto;
   max-height: 100%;
@@ -153,7 +153,7 @@
   height: 500px;
   position: relative;
 }
-.contact-form-wrapper h1 {
+.contact-form-wrapper .contact-title {
   margin: auto 20px;
   height: 180px;
   font-family: Teko;
@@ -167,20 +167,20 @@
   text-transform: uppercase;
 }
 @media (min-width: 541 px) {
-  .contact-form-wrapper h1 {
+  .contact-form-wrapper .contact-title {
     margin: auto 250px;
     max-width: 250px;
   }
 }
 @media (min-width: 1000px) {
-  .contact-form-wrapper h1 {
+  .contact-form-wrapper .contact-title {
     height: 250px;
     margin: auto 200px;
     max-width: 250px;
   }
 }
 @media (min-width: 1540px) {
-  .contact-form-wrapper h1 {
+  .contact-form-wrapper .contact-title {
     margin: auto 400px;
     max-width: 250px;
   }
@@ -225,7 +225,7 @@
   background-color: #0e0e0e;
   height: 340px;
 }
-.footer-wrapper a svg {
+.footer-wrapper .logo-image {
   position: absolute;
   top: 100px;
   left: 100px;
@@ -237,7 +237,7 @@
   grid-template-columns: repeat(12, 1fr);
   margin-top: 50px;
 }
-.quote-wrapper h1 {
+.quote-wrapper .quote-title {
   grid-column: 1/-1;
   font-family: Teko;
   font-size: 36px;
@@ -248,7 +248,7 @@
   letter-spacing: normal;
   color: #272727;
 }
-.quote-wrapper p {
+.quote-wrapper .quote-information {
   width: 359px;
   height: 30px;
   font-family: Helvetica, Arial, sans-serif;
@@ -265,11 +265,11 @@
     border-top: 1px solid #dddddd;
     max-width: 1200px;
   }
-  .quote-wrapper h1 {
+  .quote-wrapper .quote-title {
     margin-top: 50px;
     grid-column: 4/11;
   }
-  .quote-wrapper p {
+  .quote-wrapper .quote-information {
     grid-column: 4/7;
   }
 }
@@ -293,7 +293,7 @@
     overflow: hidden;
   }
 }
-.menu-bar span {
+.menu-bar .menu-link {
   font-family: Teko;
   font-size: 18px;
   line-height: 1;
@@ -304,7 +304,7 @@
   color: #0e0e0e;
   text-decoration: none;
 }
-.menu-bar span:hover {
+.menu-bar .menu-link:hover {
   color: white;
   cursor: pointer;
 }
@@ -329,7 +329,7 @@
   justify-content: flex-end;
   text-align: right;
 }
-.unstyled-list li a {
+.unstyled-list .menu-link {
   text-decoration: none;
   width: 184px;
   height: 110px;
@@ -346,7 +346,7 @@
   text-transform: uppercase;
   background-color: transparent;
 }
-.unstyled-list li a:before {
+.unstyled-list .menu-link:before {
   content: "";
   width: 10px;
   height: 10px;
@@ -357,13 +357,13 @@
   height: 25px;
   margin-right: 10px;
 }
-.unstyled-list li a:hover:before {
+.unstyled-list .menu-link:hover:before {
   display: inline-block;
 }
-.unstyled-list a:hover {
+.unstyled-list .menu-link:hover {
   color: yellow;
 }
-.unstyled-list li {
+.unstyled-list .menu-list {
   border-bottom: 1px solid #272727;
 }
 
@@ -402,12 +402,12 @@
     margin: 0 auto;
   }
 }
-.top-bar-wrapper svg {
+.top-bar-wrapper .logo-image {
   width: 55px;
   height: 15px;
 }
 @media (min-width: 769px) {
-  .top-bar-wrapper svg {
+  .top-bar-wrapper .logo-image {
     height: 28px;
   }
 }
@@ -513,7 +513,7 @@
     margin: 0 auto;
   }
 }
-.button-wrapper button {
+.button-wrapper .btn-case {
   position: absolute;
   right: 100px;
   bottom: 100px;

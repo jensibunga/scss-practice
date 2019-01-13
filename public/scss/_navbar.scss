@@ -15,7 +15,7 @@
     overflow: hidden;
   }
 
-  span {
+  .menu-link {
     font-family: Teko;
     font-size: 18px;
     line-height: 1;
@@ -52,7 +52,7 @@
   justify-content: flex-end;
   text-align: right;
 
-  li a {
+  .menu-link {
     text-decoration: none;
     width: 184px;
     height: 110px;
@@ -85,11 +85,11 @@
       display: inline-block;
     }
   }
-  a:hover {
+  .menu-link:hover {
     color: yellow;
   }
 
-  li {
+  .menu-list {
     border-bottom: 1px solid #272727;
   }
 }

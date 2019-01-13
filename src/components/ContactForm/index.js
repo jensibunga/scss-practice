@@ -11,7 +11,7 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div className="contact-form-wrapper">
-        <h1>Question? We are here to help!</h1>
+        <h1 className="contact-title">Question? We are here to help!</h1>
         <div className="form-wrapper">
           <Form onValidSubmit={this.handleSubmit} onSubmit={this.handleSubmit} />
         </div>

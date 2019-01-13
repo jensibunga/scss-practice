@@ -20,7 +20,7 @@ class HomepageBanner extends React.Component {
         </div>
 
         <div className="button-wrapper">
-          <button>View Case</button>
+          <button className="btn-case">View Case</button>
         </div>
       </div>
     );
